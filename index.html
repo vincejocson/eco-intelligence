@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>GInvest: Eco-Intelligence</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="mobile-app">
+        <header class="app-header">
+            <div class="header-content">
+                <span class="back-btn">❮</span>
+                <h1>Eco-Intelligence Fund</h1>
+                <span class="menu-btn">⋮</span>
+            </div>
+        </header>
+
+        <main class="app-body">
+            <div class="card balance-card">
+                <p>Projected Value (Year <span id="display-year">10</span>)</p>
+                <h2 id="projected-value">₱0.00</h2>
+                <p class="returns-text">Total Earnings: 
+                    <span id="total-returns">₱0.00</span></p>
+                <p class="impact-text">🌱 Funding Sustainable AI</p>
+            </div>
+
+            <div class="card chart-card">
+                <canvas id="growthChart"></canvas>
+            </div>
+
+            <div class="card controls-card">
+                <div class="slider-group">
+                    <div class="slider-labels">
+                        <label>Initial Investment</label>
+                        <span class="slider-value">₱<span id="initial-val">500</span></span>
+                    </div>
+                    <input type="range" id="initial-slider" min="100" max="20000" step="100" value="500">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-labels">
+                        <label>Monthly Auto-Invest</label>
+                        <span class="slider-value">₱<span id="monthly-val">500</span></span>
+                    </div>
+                    <input type="range" id="monthly-slider" min="100" max="5000" step="100" value="500">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-labels">
+                        <label>Time Horizon</label>
+                        <span class="slider-value"><span id="years-val">10</span> Years</span>
+                    </div>
+                    <input type="range" id="years-slider" min="1" max="30" step="1" value="10">
+                </div>
+            </div>
+            
+            <button class="invest-btn">Subscribe Now</button>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
