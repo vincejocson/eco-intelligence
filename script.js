@@ -11,7 +11,7 @@ const ctx = document.getElementById('growthChart').getContext('2d');
 const totalReturnsEl = document.getElementById('total-returns');
 
 // Rates
-const ecoFundRate = 0.12;
+const ecoFundRate = 0.18;
 const savingsRate = 0.01;
 
 let growthChart = new Chart(ctx, {
@@ -20,7 +20,7 @@ let growthChart = new Chart(ctx, {
         labels: [],
         datasets: [
             {
-                label: 'Eco-Intelligence (12%)',
+                label: 'Eco-Intelligence (18%)',
                 borderColor: '#005af0',
                 backgroundColor: 'rgba(0, 90, 240, 0.1)',
                 borderWidth: 2,
